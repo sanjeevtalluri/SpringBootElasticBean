@@ -3,16 +3,16 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      java: openjdk8
+      java: corretto8
     commands:
       - echo install
   pre_build:
     commands:
-      - echo pre_build 
+      - echo pre_build
   build:
     commands:
       - mvn package
-      - echo build   
+      - echo build
   post_build:
     commands:
       - echo post_build
