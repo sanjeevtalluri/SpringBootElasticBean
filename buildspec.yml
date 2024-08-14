@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      java: corretto11
+      java: corretto8
     commands:
       - echo install
   pre_build:
@@ -19,5 +19,5 @@ phases:
 artifacts:
   files:
     - '**/*'
-    - target\SpringBootElasticBean-0.0.1-SNAPSHOT.jar
+    - target/SpringBootElasticBean-0.0.1-SNAPSHOT.jar
   discard-paths: yes
